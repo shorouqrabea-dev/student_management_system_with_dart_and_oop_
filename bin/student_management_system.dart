@@ -47,10 +47,10 @@ void main() {
 
           print("Enter students grades like this 70, 80, 77, ...");
           List<int> grades = stdin
-              .readLineSync()!
-              .split(",")
-              .map((e) => int.parse(e))
-              .toList();
+              .readLineSync()! 
+              .split(",") 
+              .map((e) => int.parse(e)) 
+              .toList(); 
 
           studentManager.addStudent(
             Student(name: name, age: age, grades: grades),
@@ -61,7 +61,7 @@ void main() {
         studentManager.displayStudentsInfo();
         break;
       case "3":
-        print("You exited from the program.");
+      print("You exited from the program.");
         break;
     }
   } while (decisionNumber != "3");
