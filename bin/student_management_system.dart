@@ -8,7 +8,7 @@ void main() {
   Student student = Student(name: "Shorouq", age: 22, grades: studentGrades);
   student.displayStudentInfo();
   print("****");
-   StudentManager studentManager = StudentManager();
+  StudentManager studentManager = StudentManager();
   studentManager.displayStudentsInfo();
   Student firstStudent = Student(
     name: "Aseel",
@@ -69,7 +69,6 @@ void main() {
   studentManager.updateStudent(2, student);
   studentManager.updateStudent(1, student);
   studentManager.displayStudentsInfo();
-  print("blabla");
 }
 
 void displayDecisionMenu() {

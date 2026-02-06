@@ -8,8 +8,7 @@ class StudentManager {
     print("student ${student.name} is added successfully");
   }
 
-  Future<void> displayStudentsInfo() async {
-    await getDataSimulation();
+  void displayStudentsInfo()  {
     if (students.isNotEmpty) {
       for (var i = 0; i < students.length; i++) {
         print("student${i + 1}: ");
@@ -18,6 +17,16 @@ class StudentManager {
     } else {
       print("there isn't students now");
     }
+  // Future<void> displayStudentsInfo() async {
+  //   await getDataSimulation();
+  //   if (students.isNotEmpty) {
+  //     for (var i = 0; i < students.length; i++) {
+  //       print("student${i + 1}: ");
+  //       students[i].displayStudentInfo();
+  //     }
+  //   } else {
+  //     print("there isn't students now");
+  //   }
   }
 
   void updateStudent(int index, Student student) {
